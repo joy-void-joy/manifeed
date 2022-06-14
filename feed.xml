@@ -1,0 +1,8 @@
+<rss version="2.0">
+  <channel>
+    <title>Manifold market's recent markets</title>
+    <link>manifold.markets</link>
+    <language>en-us</language>
+    <description>New markets on manifold markets</description> 
+  </channel>
+</rss>
