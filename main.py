@@ -1,6 +1,5 @@
 from itertools import takewhile
 from datetime import datetime
-from os import remove
 import pathlib
 import lxml.etree as ET
 import requests
@@ -36,7 +35,7 @@ if len(all_markets) == 0:
 
 
 def to_item(market):
-    item  = ET.Element('item')
+    item = ET.Element('item')
     try:
         ET.SubElement(item, 'title').text = f'{market["question"]} - {int(market["probability"]*100)}% - M${int(market["volume"])}'
     except KeyError:
@@ -49,6 +48,7 @@ def to_item(market):
     ET.SubElement(item, 'guid').text = market['id']
 
     return item
+
 
 parser = ET.XMLParser(remove_blank_text=True)
 out_tree = ET.ElementTree()
