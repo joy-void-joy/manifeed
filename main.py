@@ -54,7 +54,7 @@ parser = ET.XMLParser(remove_blank_text=True)
 out_tree = ET.ElementTree()
 out_tree.parse(feed_output_path, parser)
 out_tree_root = out_tree.find('.//channel').find('.//description')
-for market in all_markets:
+for market in reversed(all_markets):
     out_tree_root.addnext(to_item(market))
 out_tree.write(feed_output_path, pretty_print=True)
 
