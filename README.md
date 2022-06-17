@@ -1,5 +1,6 @@
 # manifeed
 RSS feed for new manifold markets
+(If you want the cannonical rss feed: https://whatisthis.world/manifeed.xml )
 
 # Usage
 After setting a virtualenv:
