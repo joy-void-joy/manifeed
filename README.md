@@ -1,3 +1,8 @@
+# Archive notice
+
+The Manifold API has changed drastically and does not seem stable across time. This repository has therefore been archived 
+
+
 # manifeed
 RSS feed for new manifold markets
 (If you want the cannonical rss feed: https://whatisthis.world/manifeed.xml )
